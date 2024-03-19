@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="l-layout">
+    <header class="c-header">
+      <img class="c-logo" src="./public/product-logo.svg">
+      <nav class="c-nav">
+        <a class="c-nav__link c-nav__link--selected" href="#">Бизнес</a>
+        <a class="c-nav__link" href="#">О нас</a>
+        <a class="c-nav__link" href="#">Цены</a>
+        <a class="c-nav__link" href="#">Оформить заказ</a>
+      </nav>
+    </header>
+    <main class="c-main">
+      <section class="c-cta-section">
+        <article class="c-cta">
+          <p class="c-cta__title">
+            <span class="--highlight">Lorem ipsum</span> dolor sit<br> amet
+            consectetur <span class="--highlight">adipiscing</span>
+          </p>
+
+          <article class="c-cta__benefits">
+            <h1 class="c-cta__benefits-title">At vero eos et accusamus et iusto odio dignissimos ducimus!</h1>
+            <ul class="c-cta__benefits-list">
+              <li class="c-cta__benefits-list-item">Totam rem aperiam eaque ipsa</li>
+              <li class="c-cta__benefits-list-item">Sit voluptatem accusantium doloremque laudantium</li>
+              <li class="c-cta__benefits-list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+            <div class="c-cta__btn-list">
+              <button class="c-cta__btn c-cta__btn--action">Заказать</button>
+              <button class="c-cta__btn c-cta__btn--more">Подробнее</button>
+            </div>
+          </article>
+        </article>
+      </section>
+      <section class="c-form-section">
+        <h2 class="c-form-section__title">Оформление <span class="--highlight">заказа</span></h2>
+        <p class="c-form-section__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <ol class="c-service-step-list">
+          <img class="c-service-step-list__dots" src="./public/icons/dots.svg">
+          <li class="c-service-step">
+            <div class="c-serivce-step__circle">
+              <img src="./public/icons/zoom-icon.svg">
+            </div>
+            <p class="c-service-step__title">Lorem ipsum dolor
+              sit amet</p>
+          </li>
+          <li class="c-service-step">
+            <div class="c-serivce-step__circle">
+              <img src="./public/icons/percentage-icon.svg">
+            </div>
+            <p class="c-service-step__title">Lorem ipsum dolor
+              sit amet</p>
+          </li>
+          <li class="c-service-step">
+            <div class="c-serivce-step__circle">
+              <img src="./public/icons/document-icon.svg">
+            </div>
+            <p class="c-service-step__title">Sed do eiusmod tempor</p>
+          </li>
+          <li class="c-service-step">
+            <div class="c-serivce-step__circle">
+              <img src="./public/icons/mail-icon.svg">
+            </div>
+            <p class="c-service-step__title">Esse cillum dolore
+              eu fugiat</p>
+          </li>
+          <li class="c-service-step">
+            <div class="c-serivce-step__circle">
+              <img src="./public/icons/cash-icon.svg">
+            </div>
+            <p class="c-service-step__title">Excepteur sint occaecat cupidatat non proident</p>
+          </li>
+        </ol>
+        <form class="c-form js-form" method="POST">
+          <div class="c-form__content">
+            <div class="c-form__l-input-container">
+              <div class="c-form__dropdown js-dropdown">
+                <button class="c-form__dropdown-btn js-dropdown-btn" type="button">Выберите тип системы*
+                  <img class="js-dropdown-down-arrow" src="./public/icons/dropdown-down-arrow.svg">
+                  <img class="js-dropdown-up-arrow --hidden" src="./public/icons/dropdown-up-arrow.svg">
+                </button>
+                <div class="c-form__dropdown-content js-dropdown-content custom-scrollbar">
+                  <div class="custom-scrollbar__track">
+                    <div class="custom-scrollbar__thumb"></div>
+                  </div>
+                  <div class="custom-scrollbar__viewport">
+                    <div class="c-form__dropdown-item">Sed ut perspiciatis</div>
+                    <div class="c-form__dropdown-item">Nemo enim ipsam</div>
+                    <div class="c-form__dropdown-item">Et harum quidem</div>
+                    <div class="c-form__dropdown-item">Temporibus autem</div>
+                    <div class="c-form__dropdown-item">Itaque earum rerum</div>
+                    <div class="c-form__dropdown-item">Lorem ipsum</div>
+                    <div class="c-form__dropdown-item">Dolor sit amet</div>
+                  </div>
+                </div>
+              </div>
+              <input required type="email" name="email" placeholder="Ваш e-mail *" class="c-form__input"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address.">
+              <input required type="text" name="name" placeholder="Ваше имя *" class="c-form__input">
+            </div>
+            <div class="l-form-bottom">
+              <div class="c-slider">
+                <p class="c-slider__info">
+                  <span class="c-slider__info-text">Sed ut perspiciatis, unde omnis iste natus</span>
+                  <span class="c-slider__info-text js-slider-percentage"></span>
+                </p>
+                <input type="range" name="slider" class="c-slider__input js-slider-input" value="75">
+              </div>
+              <div>
+                <input type="file" id="files" name="file" style="display:none"
+                  class="c-form__input c-form__input--file">
+                <label class="c-form__label--file-input" for="files">
+                  <img src="./public/icons/file-input.svg">
+                  <span>Прикрепить файл</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="c-form__submit-btn">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="c-footer">
+      <div class="c-footer__content">
+        <p class="c-footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</p>
+        <img class="c-footer__section-break" src="./public/icons/footer-break-section-icon.svg">
+        <div class="c-footer__payment-options">
+          <div class="c-footer__payment-option">
+            <img src="./public/icons/qiwi-icon.svg" alt="Qiwi Wallet Icon" class="c-footer__payment-icon">
+            <span>Qiwi wallet</span>
+          </div>
+          <div class="c-footer__payment-option">
+            <img src="./public/icons/yandex-money-icon.svg" alt="Yandex Money Icon" class="c-footer__payment-icon">
+            <span>Yandex Money</span>
+          </div>
+          <div class="c-footer__payment-option">
+            <img src="./public/icons/web-money-icon.svg" alt="Web Money Icon" class="c-footer__payment-icon">
+            <span>Web Money</span>
+          </div>
+        </div>
+        <img class="c-footer__section-break" src="./public/icons/footer-break-section-icon.svg">
+        <div class="c-footer__contact-info">
+          <a href="mailto:info@ipsum228.com" class="c-footer__contact">
+            <img src="./public/icons/mail-footer-icon.svg" alt="Email Icon" class="c-footer__contact-icon">
+            info@ipsum228.com
+          </a>
+          <a href="https://vk.com" target="_blank" class="c-footer__contact">
+            <img src="./public/icons/vk-icon.svg" alt="VK Icon" class="c-footer__contact-icon">
+            Мы вконтакте
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
